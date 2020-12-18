@@ -12,6 +12,12 @@ and open the template in the editor.
               version="2.2">
 
     <flow-definition id="registration">
+        <flow-return id="exitToInicio">
+            <from-outcome>/inicioflow.xhtml</from-outcome>
+        </flow-return>
         
+        <flow-return id="exitToIndex">
+            <from-outcome>/index.xhtml</from-outcome>
+        </flow-return>
     </flow-definition>
 </faces-config>
