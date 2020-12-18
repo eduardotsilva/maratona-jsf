@@ -1,0 +1,8 @@
+bean\estudante\EstudanteRegistrarBean.class
+model\enums\Turno.class
+bean\session\TesteSessionBean.class
+com\mycompany\mavenproject1\resources\JavaEE8Resource.class
+bean\flow\TesteFlowBean.class
+bean\request\TesteRequestBean.class
+model\Estudante.class
+com\mycompany\mavenproject1\JAXRSConfiguration.class
