@@ -26,6 +26,11 @@ public class TesteFlowBean implements Serializable {
         return "exitToInicio";
     }
 
+    public void salvarFinalizer() {
+        System.out.println("Salvando no banco...");
+
+    }
+
     public String getNome() {
         return nome;
     }

@@ -16,8 +16,31 @@ and open the template in the editor.
             <from-outcome>/inicioflow.xhtml</from-outcome>
         </flow-return>
         
+        <start-node>registrationInicio</start-node>
+        
+        <view id="registrationInicio">
+            <vdl-document>/registration/registration1.xhtml</vdl-document>   
+        </view>
+        
+        <switch id="registrationPage2">
+            <case>
+                <if>
+                    #{not empty testeFlowBean.nome and not empty testeFlowBean.sobreNome} 
+                </if>
+                
+                <from-outcome>registration2</from-outcome>
+            </case>
+            <default-outcome>
+                registrationInicio
+            </default-outcome>
+        </switch>
+        
         <flow-return id="exitToIndex">
             <from-outcome>/index.xhtml</from-outcome>
         </flow-return>
+        
+        <finalizer>
+            #{TesteFlowBean.salvarFinalizer}
+        </finalizer>
     </flow-definition>
 </faces-config>
