@@ -21,11 +21,13 @@ and open the template in the editor.
             <h:panelGrid columns="2">
                 <h:outputLabel value="Endereço"/>
                 <h:inputText value="#{testeFlowBean.endereco}"/>
-                
-                
+
+
                 <h:commandButton value="Back" action="registration1?faces-redirect=true"/>
                 <h:commandButton value="Next" action="registration3?faces-redirect=true"/>
-                
+
+                <h:commandButton value="Validar Pendencias - FlowNested" action="callPendencies"/>
+
             </h:panelGrid>
 
         </h:form>

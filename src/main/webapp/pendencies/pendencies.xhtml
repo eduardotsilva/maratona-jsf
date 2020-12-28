@@ -13,27 +13,19 @@ and open the template in the editor.
 
     <h:head>
         <title>Teste FlowScoped</title>
+        <p:messages/>
     </h:head>
     <h:body>
-        <h2>Primeira pagina Registro FlowScoped</h2>
-        <h:messages/>
+        <h2>Validando Dados do usuário</h2>
         <h:form>
             <h:panelGrid columns="2">
-                <h:outputLabel value="Nome"/>
-                <h:inputText required="true" requiredMessage="Nome é obrigatório!" value="#{testeFlowBean.nome}"/>
+                <h:outputLabel value="#{testeFlowNestedBean.userName}"/>
+                <h:outputLabel value="#{testeFlowNestedBean.userSurname}"/>
 
-                <h:outputLabel value="Sobrenome"/>
-                <h:inputText value="#{testeFlowBean.sobreNome}"/>
-
-                <!-- usando padrão de action -->
-                <h:commandButton value="Next - Padrão" action="registration2?faces-redirect=true"/>
-
-                <!-- usando Switch do arquivo registration-flow -->
-                <h:commandButton value="Next - Switch" action="registrationPage2"/>
-
-                
+                <h:commandButton value="Voltar p/ Inicio" action="exitToinicio"/>
+               
+                <h:commandButton value="Validar Usuário" action="#{testeFlowNestedBean.validarUser()}"/>
             </h:panelGrid>
-
         </h:form>
     </h:body>
 </html>

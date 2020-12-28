@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+              version="2.2">
+
+    <flow-definition id="pendencies">
+        
+        <flow-return id="proceedToRegistration3">
+            <from-outcome>/registration/registration3</from-outcome>
+        </flow-return>
+        
+        <flow-return id="exitToinicio">
+            <from-outcome>registrationInicio</from-outcome>
+        </flow-return>
+        
+        <inbound-parameter>
+            <name>userName</name>
+            <value>#{testeFlowNestedBean.userName}</value>
+        </inbound-parameter>
+        
+        <inbound-parameter>
+            <name>userSurname</name>
+            <value>#{testeFlowNestedBean.userSurname}</value>
+        </inbound-parameter>
+        
+        
+    </flow-definition>
+</faces-config>
