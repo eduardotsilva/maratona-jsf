@@ -1,9 +1,13 @@
 bean\estudante\EstudanteRegistrarBean.class
-model\enums\Turno.class
-bean\session\TesteSessionBean.class
 com\mycompany\mavenproject1\resources\JavaEE8Resource.class
-bean\flow\TesteFlowBean.class
+bean\flowbuilder\TesteFlowBuilderNestedBean.class
 bean\flow\TesteFlowNestedBean.class
 bean\request\TesteRequestBean.class
 model\Estudante.class
+flowbuilder\NewPendenciesFlowBuilder.class
 com\mycompany\mavenproject1\JAXRSConfiguration.class
+bean\flowbuilder\TesteFlowBuilderBean.class
+model\enums\Turno.class
+bean\session\TesteSessionBean.class
+flowbuilder\NewRegistrationFlowBuilder.class
+bean\flow\TesteFlowBean.class

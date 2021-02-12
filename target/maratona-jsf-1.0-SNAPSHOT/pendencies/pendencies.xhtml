@@ -19,12 +19,12 @@ and open the template in the editor.
         <h2>Validando Dados do usuário</h2>
         <h:form>
             <h:panelGrid columns="2">
-                <h:outputLabel value="#{testeFlowNestedBean.userName}"/>
-                <h:outputLabel value="#{testeFlowNestedBean.userSurname}"/>
+                <h:outputLabel value="#{testeFlowBuilderNestedBean.userName}"/>
+                <h:outputLabel value="#{testeFlowBuilderNestedBean.userSurname}"/>
 
                 <h:commandButton value="Voltar p/ Inicio" action="exitToinicio"/>
                
-                <h:commandButton value="Validar Usuário" action="#{testeFlowNestedBean.validarUser()}"/>
+                <h:commandButton value="Validar Usuário" action="#{testeFlowBuilderNestedBean.validarUser()}"/>
             </h:panelGrid>
         </h:form>
     </h:body>

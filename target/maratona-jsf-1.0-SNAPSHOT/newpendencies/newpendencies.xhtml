@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Teste FlowScoped</title>
+        <p:messages/>
+    </h:head>
+    <h:body>
+        <h2>Validando Dados do usuário</h2>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputLabel value="#{testeFlowBuilderNestedBean.userName}"/>
+                <h:outputLabel value="#{testeFlowBuilderNestedBean.userSurname}"/>
+
+                <h:commandButton value="Voltar p/ Inicio" action="exitToNewinicio"/>
+               
+                <h:commandButton value="Validar Usuário" action="#{testeFlowBuilderNestedBean.validarUser()}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
