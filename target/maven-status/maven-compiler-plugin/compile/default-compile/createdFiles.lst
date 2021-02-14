@@ -1,10 +1,12 @@
 bean\estudante\EstudanteRegistrarBean.class
+bean\comunicacao\ComunicacaoResultadoTesteBean.class
 com\mycompany\mavenproject1\resources\JavaEE8Resource.class
 bean\flowbuilder\TesteFlowBuilderNestedBean.class
 bean\flow\TesteFlowNestedBean.class
 bean\request\TesteRequestBean.class
 model\Estudante.class
 flowbuilder\NewPendenciesFlowBuilder.class
+bean\comunicacao\ComunicacaoTeste3Bean.class
 bean\dependent\TesteDependentBean.class
 com\mycompany\mavenproject1\JAXRSConfiguration.class
 bean\flowbuilder\TesteFlowBuilderBean.class
