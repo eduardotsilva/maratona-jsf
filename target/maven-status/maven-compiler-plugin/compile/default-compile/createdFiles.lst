@@ -5,9 +5,12 @@ bean\flow\TesteFlowNestedBean.class
 bean\request\TesteRequestBean.class
 model\Estudante.class
 flowbuilder\NewPendenciesFlowBuilder.class
+bean\dependent\TesteDependentBean.class
 com\mycompany\mavenproject1\JAXRSConfiguration.class
 bean\flowbuilder\TesteFlowBuilderBean.class
 model\enums\Turno.class
+bean\login\LoginBean.class
 bean\session\TesteSessionBean.class
 flowbuilder\NewRegistrationFlowBuilder.class
 bean\flow\TesteFlowBean.class
+filter\LoginFilter.class
