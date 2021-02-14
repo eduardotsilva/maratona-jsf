@@ -8,9 +8,11 @@ flowbuilder\NewPendenciesFlowBuilder.class
 bean\dependent\TesteDependentBean.class
 com\mycompany\mavenproject1\JAXRSConfiguration.class
 bean\flowbuilder\TesteFlowBuilderBean.class
+bean\comunicacao\ComunicacaoTeste1Bean.class
 model\enums\Turno.class
 bean\login\LoginBean.class
 bean\session\TesteSessionBean.class
 flowbuilder\NewRegistrationFlowBuilder.class
+bean\comunicacao\ComunicacaoTeste2Bean.class
 bean\flow\TesteFlowBean.class
 filter\LoginFilter.class

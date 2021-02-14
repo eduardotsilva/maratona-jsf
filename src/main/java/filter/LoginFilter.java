@@ -44,6 +44,10 @@ public class LoginFilter implements Filter {
         
         if (url.contains("/restricted") && loginBean.getEstudante() == null) {
             res.sendRedirect(req.getServletContext().getContextPath() + "/login.xhtml");
+            
+            String url2 = req.getServletContext().getContextPath();
+            System.out.println(url2);
+            
         } else {
             filterChain.doFilter(servletRequest, servletResponse);
         }
